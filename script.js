@@ -25,8 +25,15 @@ btn.addEventListener('click', () => {
             btn.disabled = false;
         })
         .catch(() => {
-            loading.innerText = "Something went wrong. Try again.";
+            loading.innerText = "Error loading meme. Please try again.";
             btn.disabled = false;
         });
 
+});
+
+// Keyboard accessibility
+btn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        btn.click();
+    }
 });
