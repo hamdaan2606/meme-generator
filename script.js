@@ -1,3 +1,8 @@
+const btn = document.getElementById('btn');
+const img = document.getElementById('meme');
+const loading = document.getElementById('loading');
+const title = document.getElementById('title');
+
 btn.addEventListener('click', () => {
 
     btn.disabled = true;
