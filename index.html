@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
@@ -11,15 +11,21 @@
 
         <h1>Meme Generator</h1>
 
-        <button id="btn">Generate Meme</button>
+        <button id="btn" aria-label="Generate a new meme">
+            Generate Meme
+        </button>
 
         <p class="info">Click the button to generate a random meme</p>
 
-        <p id="loading"></p>
+        <p id="loading" role="status" aria-live="polite"></p>
 
         <img id="meme" alt="Generated meme image">
 
         <p id="title"></p>
+
+        <footer>
+            <p>CSCI 3172 – Lab 5 Meme Generator</p>
+        </footer>
 
     </div>
 
